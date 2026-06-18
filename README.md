@@ -38,7 +38,7 @@ Detailed plan: see `docs/roadmap.md`
 git status
 make help
 make hello
-./exercises/01-hello-system/hello
+./exercises/build/hello
 ```
 
 ## Recommended Setup

@@ -1,0 +1,27 @@
+# Binaries
+*.out
+*.o
+*.a
+*.so
+*.dylib
+*.exe
+
+# Debug symbols / profiling
+*.dSYM/
+*.profraw
+*.profdata
+*.gcda
+*.gcno
+
+# Build directories
+build/
+dist/
+
+# Editors / IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS files
+.DS_Store

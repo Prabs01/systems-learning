@@ -24,5 +24,8 @@ dynamic_array:
 file_copy:
 	$(CC) $(CFLAGS) exercises/03-file-copy/main.c -o exercises/build/file_copy
 
+process_launcher:
+	$(CC) $(CFLAGS) exercises/03-process-launcher/main.c -o exercises/build/launcher
+
 clean:
 	rm -f exercises/01-hello-system/hello

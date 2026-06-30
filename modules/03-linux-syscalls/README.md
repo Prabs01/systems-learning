@@ -1,4 +1,4 @@
-# Module 02: Linux System Calls
+# Module 03: Linux System Calls
 
 Topics:
 
@@ -9,5 +9,5 @@ Topics:
 
 Checkpoint:
 
-- [ ] Implement a file copy tool using syscalls
-- [ ] Implement a simple process launcher
+- [.] Implement a file copy tool using syscalls
+- [] Implement a simple process launcher

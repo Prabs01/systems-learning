@@ -1,4 +1,4 @@
-# Module 00: Environment and Tooling
+# Module 01: Environment and Tooling
 
 Checklist:
 

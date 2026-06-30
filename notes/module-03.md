@@ -80,3 +80,22 @@
     - `read()` from source
     - `write()` to destination using returned byte count
 - close both files
+
+
+# Process APIs
+
+- `fork()` 
+    - creates a new child process 
+    - returns -1 when error.
+    - returns 0 in child process.
+    - returns fd of child process in parent process
+
+- `exec()`
+    - replaces the current process's program image with a nwe executable and starts running that executable in the same process(same PID).
+    - doesnt return anything
+    - Decoding family of `exec()`
+        - `l` = list => arguments are passed one by one
+        - `v` = vector => Argumetnsts are passed as an array.
+        - `p` = PATH search => OS searches directories in `$PATH`. Dont need to provide full path.
+        - `e` = environment => Allow supplying a custom environment.
+    

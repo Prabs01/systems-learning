@@ -2,7 +2,7 @@
 
 This roadmap is designed for incremental learning with practical coding.
 
-## Module 00: Environment and Tooling
+## Module 01: Environment and Tooling
 
 - Install compiler toolchain and debuggers.
 - Learn basic build commands.
@@ -11,7 +11,7 @@ This roadmap is designed for incremental learning with practical coding.
 Deliverable:
 - Build and run your first C program.
 
-## Module 01: C Fundamentals for Systems
+## Module 02: C Fundamentals for Systems
 
 - Pointers, arrays, structs, and manual memory management.
 - Header/source file separation.
@@ -20,7 +20,7 @@ Deliverable:
 Deliverable:
 - Utility library with tests.
 
-## Module 02: Linux System Calls
+## Module 03: Linux System Calls
 
 - `open`, `read`, `write`, `close`.
 - `fork`, `exec`, `wait` basics.
@@ -29,7 +29,7 @@ Deliverable:
 Deliverable:
 - Minimal shell-like command runner.
 
-## Module 03: Processes, Signals, and IPC
+## Module 04: Processes, Signals, and IPC
 
 - Process lifecycle and states.
 - Pipes and basic inter-process communication.
@@ -38,7 +38,7 @@ Deliverable:
 Deliverable:
 - Parent/child process coordinator.
 
-## Module 04: Files, Memory, and I/O
+## Module 05: Files, Memory, and I/O
 
 - File descriptors and buffering.
 - `mmap` and virtual memory basics.
@@ -47,7 +47,7 @@ Deliverable:
 Deliverable:
 - File inspector and hex viewer.
 
-## Module 05: Networking Fundamentals
+## Module 06: Networking Fundamentals
 
 - OSI vs TCP/IP practical view.
 - IP addressing, ports, and routing basics.
@@ -56,7 +56,7 @@ Deliverable:
 Deliverable:
 - Networking notes + packet capture walkthrough.
 
-## Module 06: Sockets and Client/Server
+## Module 07: Sockets and Client/Server
 
 - Socket lifecycle (create, bind, listen, accept, connect).
 - TCP vs UDP trade-offs.
@@ -65,7 +65,7 @@ Deliverable:
 Deliverable:
 - Echo server and client.
 
-## Module 07: Concurrency and I/O Multiplexing
+## Module 08: Concurrency and I/O Multiplexing
 
 - Blocking vs non-blocking I/O.
 - `select`, `poll`, and `epoll` concepts.
@@ -74,7 +74,7 @@ Deliverable:
 Deliverable:
 - Multi-client chat server.
 
-## Module 08: Protocols and Observability
+## Module 09: Protocols and Observability
 
 - Define simple wire protocol.
 - Logging, metrics, and tracing basics.

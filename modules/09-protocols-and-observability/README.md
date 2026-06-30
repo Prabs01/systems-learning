@@ -1,4 +1,4 @@
-# Module 08: Protocols and Observability
+# Module 09: Protocols and Observability
 
 Topics:
 

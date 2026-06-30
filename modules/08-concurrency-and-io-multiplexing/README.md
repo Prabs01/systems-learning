@@ -1,4 +1,4 @@
-# Module 07: Concurrency and I/O Multiplexing
+# Module 08: Concurrency and I/O Multiplexing
 
 Topics:
 

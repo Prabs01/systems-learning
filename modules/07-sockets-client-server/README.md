@@ -1,4 +1,4 @@
-# Module 06: Sockets Client/Server
+# Module 07: Sockets Client/Server
 
 Topics:
 

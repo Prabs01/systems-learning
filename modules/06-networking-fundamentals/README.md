@@ -1,4 +1,4 @@
-# Module 05: Networking Fundamentals
+# Module 06: Networking Fundamentals
 
 Topics:
 

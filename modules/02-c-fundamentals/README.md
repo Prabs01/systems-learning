@@ -1,4 +1,4 @@
-# Module 01: C Fundamentals
+# Module 02: C Fundamentals
 
 Topics:
 

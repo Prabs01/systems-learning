@@ -1,4 +1,4 @@
-# Module 03: Processes and Signals
+# Module 04: Processes and Signals
 
 Topics:
 

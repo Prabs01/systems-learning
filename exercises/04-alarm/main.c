@@ -1,17 +1,20 @@
-#define _POSIX_C_SOURCE 2008090L //feature test macro
+#define _POSIX_C_SOURCE 200809L //feature test macro
 
 #include<signal.h>
 #include<unistd.h>
 #include<stdlib.h>
 #include<stdio.h>
-#include<ctype.h>
 #include<string.h>
+
+#define INT_MAX 2147483647
+
+volatile sig_atomic_t alarm_triggered = 0;
 
 void alarm_sig(int sig);
 
 int main(int argc, char* argv[]){
 
-    if (argc < 2 || argc > 2){
+    if (argc!=2){
         fprintf(stderr, "Usage: %s <time in seconds>\n", argv[0]);
         exit(EXIT_FAILURE);
     }  
@@ -25,13 +28,18 @@ int main(int argc, char* argv[]){
     sa.sa_flags = 0;
     
     if(sigaction(SIGALRM, &sa, NULL) == -1){
-        perror("signalaction");
+        perror("sigaction");
         return 1;
     }
 
 
     char* endptr;
     long long_time = strtol(argv[1], &endptr, 10);
+    // Check for errors in conversion
+    if (long_time < 0 || long_time > INT_MAX) {
+        fprintf(stderr, "Error: Time value out of range\n");
+        exit(EXIT_FAILURE);
+    }
     int time_sec;
 
     if(endptr == argv[1]){
@@ -49,8 +57,9 @@ int main(int argc, char* argv[]){
        alarm(time_sec);
     }
 
-    for(;;) pause();
-
+    while(!alarm_triggered){
+        pause();
+    }
 
     return 0;
 }
@@ -61,8 +70,9 @@ void alarm_sig(int sig){
         char buffer[] = "Time's up!\n";
         write(STDOUT_FILENO, buffer, sizeof(buffer)-1);
     }else{
-        perror("alarm");
+        perror("signal");
     }
 
-    exit(0);
+    alarm_triggered = 1;
+
 }

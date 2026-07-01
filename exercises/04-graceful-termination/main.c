@@ -1,10 +1,12 @@
-#define _POSIX_C_SOURCE 2008090L //feature test macro
+#define _POSIX_C_SOURCE 200809L //feature test macro
 
 #include <signal.h>
 #include <unistd.h>
 #include <string.h>
 #include <stdio.h>
 #include<stdlib.h>
+
+volatile sig_atomic_t terminate_flag = 0;
 
 void terminate(int sig);
 
@@ -26,7 +28,9 @@ int main(){
     write(STDOUT_FILENO, buffer, sizeof(buffer)-1);
 
     /* wait for signals */
-    for(;;) pause();
+    while(!terminate_flag){
+        pause();
+    }
 
     return 0;
 }
@@ -41,5 +45,5 @@ void terminate(int sig){
         perror("signal");
     }
 
-    exit(0);
+    terminate_flag = 1;
 }

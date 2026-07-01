@@ -99,3 +99,13 @@
         - `p` = PATH search => OS searches directories in `$PATH`. Dont need to provide full path.
         - `e` = environment => Allow supplying a custom environment.
     
+- `await()`
+    - waits for a child process to terminate
+    - returns PID of terminated child
+    - returns -1 on error
+    - can retrieve exit status of child
+    - Types
+        - `wait()` => waits for any child process to terminate
+        - `waitpid(pid, &status, options)` => waits for specific child process to terminate
+
+        

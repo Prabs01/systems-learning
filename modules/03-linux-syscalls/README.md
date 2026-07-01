@@ -10,4 +10,4 @@ Topics:
 Checkpoint:
 
 - [.] Implement a file copy tool using syscalls
-- [] Implement a simple process launcher
+- [.] Implement a simple process launcher

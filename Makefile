@@ -27,5 +27,11 @@ file_copy:
 process_launcher:
 	$(CC) $(CFLAGS) exercises/03-process-launcher/main.c -o exercises/build/launcher
 
+graceful_termination:
+	$(CC) $(CFLAGS) exercises/04-graceful-termination/main.c -o exercises/build/graceful_termination
+
+alarm:
+	$(CC) $(CFLAGS) exercises/04-alarm/main.c -o exercises/build/alarm
+
 clean:
 	rm -f exercises/01-hello-system/hello
